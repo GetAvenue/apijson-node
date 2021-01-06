@@ -1,0 +1,12 @@
+version: "2"
+services: 
+  apijson: 
+    image: node:12
+    container_name: apijson
+    ports: 
+      - 9771:9771
+    volumes:
+      - ./:/apijson
+    stdin_open: true
+    privileged: true
+    entrypoint: ["/bin/bash"]
