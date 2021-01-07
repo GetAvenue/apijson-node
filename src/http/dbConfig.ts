@@ -33,5 +33,6 @@ export const dbConfig = [
     database: resolve(__dirname, '../../Test.db'),
     entities: [ `${ [ 'development' ].indexOf(process.env.NODE_ENV) > -1 ? 'src' : 'dist' }/**/**.entity{.ts,.js}` ],
     synchronize: false
-  })
+  }),
+  
 ]

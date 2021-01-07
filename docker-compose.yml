@@ -9,4 +9,5 @@ services:
       - ./:/apijson
     stdin_open: true
     privileged: true
+    restart: always
     entrypoint: ["/bin/bash"]
